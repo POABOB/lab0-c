@@ -38,7 +38,7 @@ void q_free(struct list_head *head)
         q_release_element(e);
     }
 
-    free(container_of(head, element_t, list));
+    free(head);
 }
 
 /* Insert an element at head of queue */
